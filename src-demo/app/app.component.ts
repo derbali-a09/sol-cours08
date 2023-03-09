@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Travail 08';
-  
+  title = 'angularApp';
+  person = {name:'Felix Lajoie', age: 14, address:'Laval'}
+
+
+
+  quiSuisJe():void{
+    alert("Je suis l'auteur de cette application")
+  }
 }

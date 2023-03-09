@@ -1,0 +1,19 @@
+
+<h1 class="text-success">Liste des personnes inscrites</h1>
+<table class="table table-hover">
+  <tr>
+    <th>Nom</th>
+    <th>Age</th>
+    <th>Ville</th>
+    <th>Observation</th>
+  </tr>
+  <tr *ngFor="let p of people">
+    <td>{{p.name}}</td>
+    <td>{{p.age}} ans</td>
+    <td> {{p.address}}</td>
+    <th>
+      <p *ngIf="p.age >= 18">Vous êtes majeur(e)</p>
+      <p *ngIf="p.age < 18">Vous êtes mineur(e)</p>
+    </th>
+  </tr>
+</table>

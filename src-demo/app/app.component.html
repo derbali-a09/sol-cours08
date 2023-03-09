@@ -1,0 +1,22 @@
+<table class="table">
+  <tr>
+    <td>
+      <h1 class="display-1">Le projet DEMO</h1>
+      <h1>Le titre est <b>{{title}}</b></h1>
+      <p>Détails de la personne</p>
+      <ul>
+        <li>Nom: {{person.name}}</li>
+        <li>Age: {{person.age}}</li>
+        <li>Ville: {{person.address}}</li>
+      </ul>
+
+      <p *ngIf="person.age >= 18">Vous êtes majeur(e)</p>
+      <p *ngIf="person.age < 18">Vous êtes mineur(e)</p>
+
+      <button (click)="quiSuisJe()">Qui suis je?</button>
+    </td>
+    <td>
+      <app-clients></app-clients>
+    </td>
+  </tr>
+</table>
